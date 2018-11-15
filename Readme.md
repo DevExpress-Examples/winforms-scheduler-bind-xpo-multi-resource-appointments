@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/XPO_MultiResource_Example/Form1.cs) (VB: [Form1.vb](./VB/XPO_MultiResource_Example/Form1.vb))
+* [XPAppointment.cs](./CS/XPO_MultiResource_Example/XPAppointment.cs) (VB: [XPAppointment.vb](./VB/XPO_MultiResource_Example/XPAppointment.vb))
+* [XPResource.cs](./CS/XPO_MultiResource_Example/XPResource.cs) (VB: [XPResource.vb](./VB/XPO_MultiResource_Example/XPResource.vb))
+<!-- default file list end -->
 # How to bind the XtraScheduler with multi-resource appointments to XPO
 
 
