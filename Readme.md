@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+* [XPObjects.cs](./CS/XPObjects.cs) (VB: [XPObjects.vb](./VB/XPObjects.vb))
+<!-- default file list end -->
 # How to bind the XtraScheduler with multi-resource appointments to XPO
 
 
