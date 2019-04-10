@@ -6,7 +6,6 @@ Imports System
 Namespace XPO_MultiResource_Example
 	#Region "#xpappointment"
 	' XP object
-	<DeferredDeletion(false)>
 	Public Class XPAppointment
 		Inherits XPObject
 
