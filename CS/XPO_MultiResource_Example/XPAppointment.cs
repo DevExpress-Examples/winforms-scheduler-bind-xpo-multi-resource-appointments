@@ -6,6 +6,7 @@ using System;
 namespace XPO_MultiResource_Example {
     #region #xpappointment
     // XP object
+    [DeferredDeletion(false)]
     public class XPAppointment : XPObject {
         public XPAppointment(Session session) : base(session) { }
 
