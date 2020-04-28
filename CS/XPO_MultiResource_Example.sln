@@ -1,6 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPO_MultiResource_Example", "XPO_MultiResource_Example\XPO_MultiResource_Example.csproj", "{8D4766F2-C898-402A-8B75-21C5D7E9996F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPO_MultiResource_Example_NetCore", "XPO_MultiResource_Example_NetCore\XPO_MultiResource_Example_NetCore.csproj", "{DE0EA4B0-396D-4EF1-8CD6-4448B02140FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,8 +16,15 @@ Global
 		{8D4766F2-C898-402A-8B75-21C5D7E9996F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D4766F2-C898-402A-8B75-21C5D7E9996F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D4766F2-C898-402A-8B75-21C5D7E9996F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0EA4B0-396D-4EF1-8CD6-4448B02140FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0EA4B0-396D-4EF1-8CD6-4448B02140FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0EA4B0-396D-4EF1-8CD6-4448B02140FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0EA4B0-396D-4EF1-8CD6-4448B02140FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD936400-BD08-4CFC-B00A-792771E2AE2A}
 	EndGlobalSection
 EndGlobal

@@ -10,7 +10,7 @@ namespace XPO_MultiResource_Example {
         public Form1() {
             InitializeComponent();
 
-            session1.ConnectionString = DevExpress.Xpo.DB.AccessConnectionProvider.GetConnectionString("XPO_MultiResource_Example.mdb");
+            session1.ConnectionString = "XpoProvider=InMemoryDataStore";
 
             schedulerDataStorage1.Appointments.DataSource = xpCollectionAppointments;
             schedulerDataStorage1.Resources.DataSource = xpCollectionResources;

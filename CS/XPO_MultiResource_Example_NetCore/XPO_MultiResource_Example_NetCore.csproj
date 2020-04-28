@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\XPO_MultiResource_Example\Form1.cs" Link="Form1.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\Form1.Designer.cs" Link="Form1.Designer.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\Program.cs" Link="Program.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\Properties\Resources.Designer.cs" Link="Resources.Designer.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\Properties\Settings.Designer.cs" Link="Settings.Designer.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\XPAppointment.cs" Link="XPAppointment.cs" />
+    <Compile Include="..\XPO_MultiResource_Example\XPResource.cs" Link="XPResource.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\XPO_MultiResource_Example\Form1.resx" Link="Form1.resx" />
+    <EmbeddedResource Include="..\XPO_MultiResource_Example\Properties\Resources.resx" Link="Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\XPO_MultiResource_Example\Properties\Settings.settings" Link="Settings.settings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.3-ctp" />
+  </ItemGroup>
+
+</Project>
