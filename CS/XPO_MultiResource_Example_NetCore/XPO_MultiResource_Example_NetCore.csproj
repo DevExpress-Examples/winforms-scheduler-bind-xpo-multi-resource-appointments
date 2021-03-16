@@ -21,6 +21,6 @@
     <None Include="..\XPO_MultiResource_Example\Properties\Settings.settings" Link="Settings.settings" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.10-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.11-ctp" />
   </ItemGroup>
 </Project>
