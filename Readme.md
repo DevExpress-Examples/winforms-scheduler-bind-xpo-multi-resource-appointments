@@ -3,13 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E81)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to bind the XtraScheduler with multi-resource appointments to XPO
+# WinForms Scheduler - Bind to multi-resource appointments with XPO
+
+This example demonstrates how to use [Object-Relational Mapping Library (XPO)](https://docs.devexpress.com/XPO/1998/express-persistent-objects) to bind the WinForms Scheduler control with [multi-resource appointments](https://docs.devexpress.com/WindowsForms/4217/controls-and-libraries/scheduler/examples/data-binding/how-to-enable-multi-resource-appointments) (the [AppointmentStorage.ResourceSharing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.AppointmentDataStorage.ResourceSharing) option is enabled).
+
+Follow the steps below:
+
+1. Reference the *DevExpress.Xpo.vX.y.dll* assembly.
+2. Declare `XPAppointment` and `XPResource` classes derived from [XPObject](https://docs.devexpress.com/XPO/DevExpress.Xpo.XPObject).
+3. Rebuild the solution.
+4. Drop two [XPCollection](https://docs.devexpress.com/XPO/DevExpress.Xpo.XPCollection) components from the toolbox onto a Form. Name these components as "xpCollectionAppointments" and "xpCollectionResources".
+5. Set their [ObjectClassInfo](https://docs.devexpress.com/XPO/DevExpress.Xpo.XPCollection.ObjectClassInfo) properties to the `XPAppointment` and `XPResource` objects, respectively.
+6. Set the [DeleteObjectOnRemove](https://docs.devexpress.com/XPO/DevExpress.Xpo.XPBaseCollection.DeleteObjectOnRemove) property of the **xpCollectionAppointments** to **true**.
+7. Set the `SchedulerStorage.Appointments.DataSource` property to `xpCollectionAppointments`.
+8. Set the `SchedulerStorage.Resources.DataSource` property to `xpCollectionResources`.
+9. Set up required [mappings](https://docs.devexpress.com/WindowsForms/15468/controls-and-libraries/scheduler/data-binding/mappings) for `AppointmentStorage` and `ResourceStorage`.
+10. Handle [SchedulerStorage.AppointmentsChanged](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage.AppointmentsChanged) and [SchedulerStorage.AppointmentsInserted](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage.AppointmentsInserted) events to save persistent objects.
+
+![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-bind-the-xtrascheduler-with-multi-resource-appointments-to-xpo-e81/20.1.3%2B/media/winforms-scheduler-xpo.png)
 
 
-<p>To bind the <strong>XtraScheduler</strong> to <a href="http://devexpress.com/Products/NET/XPO/">eXpress Persistent Objects</a>, if an Apppointment Storage contains <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument4217">multi-resource appointments</a> (the <a href="https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.AppointmentDataStorage.ResourceSharing">AppointmentStorage.ResourceSharing</a> property is set to <strong>true</strong>), perform the following steps:</p>
-<p>1. Add the DevExpress.Xpo.vX.y.dll assembly to the references list of the project.<br />2. Declare <strong>XPAppointment</strong> and <strong>XPResource</strong> classes (derived from <a href="http://documentation.devexpress.com/#XPO/CustomDocument2030">XPObject</a>).<br />3. Rebuild the application, so that these objects can be used for the <a href="http://documentation.devexpress.com/#XPO/CustomDocument2031">XPCollection</a>.<br />4. Drop two <strong>XPCollection</strong> components from the toolbox onto a Form and name them <strong>xpCollectionAppointments</strong> and <strong>xpCollectionResources</strong>.<br />5. Set their <a href="http://documentation.devexpress.com/#XPO/DevExpressXpoXPCollection_ObjectClassInfotopic">ObjectClassInfo</a> properties to the <strong>XPAppointment</strong> and <strong>XPResource</strong> objects, respectively.<br />6. Set the <a href="http://help.devexpress.com/#CoreLibraries/DevExpressXpoXPBaseCollection_DeleteObjectOnRemovetopic">DeleteObjectOnRemove</a> property of the <strong>xpCollectionAppointments</strong> to <strong>true</strong>.<br />7. Set the <strong>SchedulerStorage.Appointments.DataSource</strong> property to xpCollectionAppointments, and the <strong>SchedulerStorage.Resources.DataSource</strong> property to xpCollectionResources.<br />8. Specify all required <a href="http://documentation.devexpress.com/#WindowsForms/CustomDocument3289">mappings</a> for the <strong>AppointmentStorage</strong> and the <strong>ResourceStorage</strong>.<br />9. Handle the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraSchedulerSchedulerStorageBase_AppointmentsChangedtopic">SchedulerStorage.AppointmentsChanged</a> and <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraSchedulerSchedulerStorageBase_AppointmentsInsertedtopic">SchedulerStorage.AppointmentsInserted</a> events using the event handler which calls the <a href="http://documentation.devexpress.com/#XPO/DevExpressXpoXPBaseObject_Savetopic">XPBaseObject.Save</a> method. The event handler is the same for both events.</p>
-<p>This approach is illustrated by the sample project.</p>
+## Documentation
 
-<br/>
-
-
+* [Data Binding - WinForms Scheduler](https://docs.devexpress.com/WindowsForms/14807/controls-and-libraries/scheduler/examples/data-binding)
