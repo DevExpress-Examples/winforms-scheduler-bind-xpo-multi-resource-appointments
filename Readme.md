@@ -21,7 +21,7 @@ Follow the steps below:
 9. Set up required [mappings](https://docs.devexpress.com/WindowsForms/15468/controls-and-libraries/scheduler/data-binding/mappings) for `AppointmentStorage` and `ResourceStorage`.
 10. Handle [SchedulerStorage.AppointmentsChanged](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage.AppointmentsChanged) and [SchedulerStorage.AppointmentsInserted](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage.AppointmentsInserted) events to save persistent objects.
 
-![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-bind-the-xtrascheduler-with-multi-resource-appointments-to-xpo-e81/20.1.3%2B/media/winforms-scheduler-xpo.png)
+![](media/winforms-scheduler-xpo.png)
 
 
 ## Documentation
@@ -34,3 +34,4 @@ Follow the steps below:
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
